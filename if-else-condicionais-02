@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExerciciosIfElse02
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int capacete = 100;
+            int roda = 300;
+            int total = capacete + roda;
+            int limite = 1000;
+                     
+
+            Console.WriteLine("Seja bem vindo a MotoCenter & MotorClube, maior loja motociclistica da região!");         
+            
+
+            Console.Write("O senhor gostaria de fazer uma compra conosco? Se sim oque deseja: ");
+            Console.ReadLine();
+
+            Console.WriteLine("Certo o valor do capacete é R$ 100; ");
+            Console.ReadLine();
+
+            Console.WriteLine("E o valor da roda fica a R$ 300, vamos levar? ");
+            Console.ReadLine();
+
+            Console.Write("Qual o limite do cartão de crédito do senhor?");
+            Console.ReadLine();
+
+            Console.WriteLine("Certo, vou verificar no sistema.");
+            Console.WriteLine("Verificando...");
+            Console.ReadLine();
+
+
+            if (limite > capacete + roda)
+            {
+                Console.WriteLine("Certo, o limite do senhor está apto para realizar a comprar ");
+            }
+            else
+            {
+                Console.WriteLine("Infelizmente o limite do senhor não da para levar os dois, mas vamos ver um só?");
+            }
+
+            Console.WriteLine("Podemos fechar a conta? ");
+            Console.ReadLine();
+
+            Console.WriteLine("A compra do senhor deu: " + total);
+            Console.WriteLine("Seu limite atual está em: " + (limite = roda - capacete));
+
+            Console.WriteLine("Aqui está o seu pedido! Muito obrigado pela preferência e volte sempre! ");
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
